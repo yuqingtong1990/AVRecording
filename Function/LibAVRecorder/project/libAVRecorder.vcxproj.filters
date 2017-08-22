@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="project">
+      <UniqueIdentifier>{878b1d8e-ac63-42a3-864d-0bd2946aeca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{55aa7f32-7792-4c57-ad46-b6c0525afb57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ae3797a8-b15f-4d2a-9c88-d41db338326e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{cbd2e95c-b2ef-4032-8f74-bba556588ce3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScreenGrabberFactory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio_mixer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AudioCaptureFactory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CMediaFileRecorder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CScreenAudioRecord.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CScreenAudioRecord_C.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CScreenGdiGrabber.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CWASAudioCapture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CWAVEAudioCapture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\log.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\screen_audio_recorder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScreenAndAudioCapture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dllmain.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\base\system_info.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\targetver.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CMediaFileRecorder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CScreenAudioRecord.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CScreenGdiGrabber.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CWASAudioCapture.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CWAVEAudioCapture.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IAudioCapture.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IMediaFileRecorder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\log.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\base\system_info.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IScreeAudioRecord.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IScreenAudioRecord_C.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MediaRecordTypeDef.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\IScreenGrabber.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

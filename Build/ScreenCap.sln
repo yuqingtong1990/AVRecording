@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{BF7DE785-83C0-4871-8856-85DC5882E8B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Function", "Function", "{64BCFC8A-3C60-4FF8-A164-F22F7DC40834}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScreenCap", "..\Client\ScreenCap\project\ScreenCap.vcxproj", "{5A83B85C-A8C9-440A-9743-CD4FC417B2DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C00289C-F9F4-4649-B319-784620C07ABD} = {6C00289C-F9F4-4649-B319-784620C07ABD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libAVRecorder", "..\Function\LibAVRecorder\project\libAVRecorder.vcxproj", "{6C00289C-F9F4-4649-B319-784620C07ABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A83B85C-A8C9-440A-9743-CD4FC417B2DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A83B85C-A8C9-440A-9743-CD4FC417B2DA}.Debug|Win32.Build.0 = Debug|Win32
+		{5A83B85C-A8C9-440A-9743-CD4FC417B2DA}.Release|Win32.ActiveCfg = Release|Win32
+		{5A83B85C-A8C9-440A-9743-CD4FC417B2DA}.Release|Win32.Build.0 = Release|Win32
+		{6C00289C-F9F4-4649-B319-784620C07ABD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C00289C-F9F4-4649-B319-784620C07ABD}.Debug|Win32.Build.0 = Debug|Win32
+		{6C00289C-F9F4-4649-B319-784620C07ABD}.Release|Win32.ActiveCfg = Release|Win32
+		{6C00289C-F9F4-4649-B319-784620C07ABD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A83B85C-A8C9-440A-9743-CD4FC417B2DA} = {BF7DE785-83C0-4871-8856-85DC5882E8B7}
+		{6C00289C-F9F4-4649-B319-784620C07ABD} = {64BCFC8A-3C60-4FF8-A164-F22F7DC40834}
+	EndGlobalSection
+EndGlobal

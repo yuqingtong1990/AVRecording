@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="project">
+      <UniqueIdentifier>{7eea6902-b4ee-443b-be1a-aa30c164a74e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e51a0198-304b-461c-9095-8a836d7743d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Resource.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\targetver.h">
+      <Filter>project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WndRecordMain.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RecorderCfgMgr.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RecorderFuc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="RecorderDef.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\stdafx.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScreenCap.cpp" />
+    <ClCompile Include="..\src\WndRecordMain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RecorderCfgMgr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RecorderFuc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\ScreenCap.rc" />
+  </ItemGroup>
+</Project>

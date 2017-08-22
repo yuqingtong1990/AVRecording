@@ -114,7 +114,7 @@ int OpenSpeakerInput(char* inputForamt, char* url)
 		printf("Speaker: failed to call avformat_find_stream_info\n");
 		return -1;
 	}
-	for (int i = 0; i < _fmt_ctx_spk->nb_streams; i++)
+	for (unsigned int i = 0; i < _fmt_ctx_spk->nb_streams; i++)
 	{
 		if (_fmt_ctx_spk->streams[i]->codec->codec_type == AVMEDIA_TYPE_AUDIO)
 		{

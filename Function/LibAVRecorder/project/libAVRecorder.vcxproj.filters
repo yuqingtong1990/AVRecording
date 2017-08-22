@@ -25,9 +25,6 @@
     <ClCompile Include="..\src\ScreenGrabberFactory.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\audio_mixer.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\AudioCaptureFactory.cpp">
       <Filter>src</Filter>
     </ClCompile>

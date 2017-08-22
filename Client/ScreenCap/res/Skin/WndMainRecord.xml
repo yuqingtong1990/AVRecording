@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="320,120" caption="0,0,0,50" bktrans="false" showshadow="true" shadowimage="wndshadow.png" shadowsize="8" shadowcorner="8,8,8,8" shadowcolor="#FFFFFFFF">
+	<Font id="0" name="微软雅黑" size="14" default="true"/>
+	<Font id="1" name="宋体" size="16"/>
+    <VerticalLayout bkcolor="#FFFFFFFF">
+		<VerticalLayout bkcolor="#FFFF0817" height="50">
+			<Container />
+			<HorizontalLayout height="22">
+				<Container width="10"/>
+				<Label text="屏幕录制" width="100" textcolor="#FFFFFFFF" font="1"/>
+				<Container />
+				<Button name="BtnMin" width="22" height="22" normalimage="file=&apos;min.png&apos; source=&apos;0,0,22,22&apos;" hotimage="file=&apos;min.png&apos; source=&apos;22,0,44,22&apos;" pushedimage="file=&apos;min.png&apos; source=&apos;44,0,66,22&apos;"/>
+				<Container width="8"/>
+				<Button name="BtnClose" width="22" height="22" normalimage="file=&apos;Close.png&apos; source=&apos;0,0,22,22&apos;" hotimage="file=&apos;Close.png&apos; source=&apos;22,0,44,22&apos;" pushedimage="file=&apos;Close.png&apos; source=&apos;44,0,66,22&apos;"/>
+				<Container width="10"/>
+			</HorizontalLayout>
+			<Container />
+		</VerticalLayout>
+		<HorizontalLayout>
+			<Option name="OptRecord" width="33" height="34" float="true" pos="30,13,0,0" selectedimage="file=&apos;StopTool.png&apos; source=&apos;0,34,33,68&apos;" normalimage="file=&apos;PlayTool.png&apos; source=&apos;0,34,33,68&apos;" tooltip="开始录制"/>
+			<Label name="LabRecordTime" float="true" width="120" height="30" pos="80,15,0,0"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

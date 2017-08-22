@@ -154,7 +154,7 @@ namespace MediaFileRecorder
 			return -1;
 		}
 
-		CoInitialize(NULL);
+		::CoInitialize(NULL);
 
 		Info("CWASAudioCapture: InitCapture, type: %d", m_nDevType);
 
@@ -268,7 +268,7 @@ namespace MediaFileRecorder
 		if (m_bInited)
 		{
 			CleanUp();
-			CoUninitialize();
+			::CoUninitialize();
 			m_bInited = false;
 			return 0;
 		}

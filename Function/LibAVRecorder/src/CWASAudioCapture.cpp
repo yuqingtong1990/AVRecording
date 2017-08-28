@@ -19,7 +19,7 @@ namespace MediaFileRecorder
 		m_bInited = false;
 		m_bCapturing = false;
 		m_bReconnecting = false;
-		InitializeCriticalSection(&m_sectionDataCb);
+		::InitializeCriticalSection(&m_sectionDataCb);
 		m_hCaptureReadyEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
 		m_hCaptureStopEvent = CreateEvent(NULL, TRUE, FALSE, NULL);
 	}
@@ -50,6 +50,7 @@ namespace MediaFileRecorder
 			CloseHandle(m_hReconnectThread);
 			m_hReconnectThread = NULL;
 		}
+        ::DeleteCriticalSection(&m_sectionDataCb);
 	}
 
 	int CWASAudioCapture::RegisterCaptureDataCb(IAudioCaptureDataCb* pDataCb)
@@ -464,7 +465,7 @@ namespace MediaFileRecorder
 			}
 
 			EnterCriticalSection(&m_sectionDataCb);
-            for (int i = 0 ;i< m_vecDataCb.size();i++)
+            for (unsigned int i = 0 ;i< m_vecDataCb.size();i++)
 			{
                 auto iter = m_vecDataCb[i];
 				iter->OnCapturedData(buffer, frames, m_nDevType, m_stAudioInfo);

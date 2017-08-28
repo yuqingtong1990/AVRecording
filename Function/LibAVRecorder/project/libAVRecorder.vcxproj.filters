@@ -31,9 +31,6 @@
     <ClCompile Include="..\src\CMediaFileRecorder.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\CScreenAudioRecord.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\CScreenAudioRecord_C.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -49,17 +46,14 @@
     <ClCompile Include="..\src\log.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\screen_audio_recorder.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\ScreenAndAudioCapture.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\dllmain.cpp">
       <Filter>project</Filter>
     </ClCompile>
     <ClCompile Include="..\src\base\system_info.cpp">
       <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CScreenAudioRecord.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,9 +64,6 @@
       <Filter>project</Filter>
     </ClInclude>
     <ClInclude Include="..\src\CMediaFileRecorder.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\CScreenAudioRecord.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\src\CScreenGdiGrabber.h">
@@ -106,6 +97,12 @@
       <Filter>interface</Filter>
     </ClInclude>
     <ClInclude Include="..\src\IScreenGrabber.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ICustomMediaRecorder.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CScreenAudioRecord.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

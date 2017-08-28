@@ -23,6 +23,7 @@ namespace MediaFileRecorder {
 		{
 			StopGrab();
 		}
+        DeleteCriticalSection(&m_sectionDataCb);
 	}
 
 	int CScreenGdiGrabber::RegisterDataCb(IScreenGrabberDataCb* cb)
@@ -201,7 +202,7 @@ namespace MediaFileRecorder {
 				SRCCOPY);
 
 			EnterCriticalSection(&m_sectionDataCb);
-            for (int i = 0 ;i< vec_data_cb_.size();i++)
+            for (unsigned int i = 0 ;i< vec_data_cb_.size();i++)
 			{
                 IScreenGrabberDataCb* cb = vec_data_cb_[i];
 				cb->OnScreenData(bmp_buffer_, video_info_);

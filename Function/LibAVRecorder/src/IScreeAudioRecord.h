@@ -1,17 +1,15 @@
 #ifndef ISCREENAUDIORECORD_H
 #define ISCREENAUDIORECORD_H
 
-#include "MediaRecordTypeDef.h"
+/*
+*屏幕录制功能函数C++导出接口
+*/
 
-#ifdef LIBAVRECORDER_EXPORTS
-#define RECORDAPI __declspec(dllexport)
-#else
-#define RECORDAPI __declspec(dllimport)
-#endif
+#include "MediaRecordTypeDef.h"
 
 namespace MediaFileRecorder
 {
-	class IScreenAudioRecord
+	class RECORDAPI IScreenAudioRecord
 	{
 	public:
 		virtual int SetRecordInfo(const RECORD_INFO& recordInfo) = 0;

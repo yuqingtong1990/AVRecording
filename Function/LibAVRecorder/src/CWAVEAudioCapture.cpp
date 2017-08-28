@@ -23,6 +23,7 @@ namespace MediaFileRecorder
 		{
 			StopCapture();
 		}
+         ::DeleteCriticalSection(&m_sectionDataCb);
 	}
 
 	int CWAVEAudioCapture::RegisterCaptureDataCb(IAudioCaptureDataCb* pDataCb)
@@ -288,7 +289,7 @@ namespace MediaFileRecorder
 				{
 					int nSamples = nCapturedSize / nBytesPerSample;
 					EnterCriticalSection(&m_sectionDataCb);
-					for (int i = 0 ;i< m_vecDataCb.size();i++)
+					for (unsigned int i = 0 ;i< m_vecDataCb.size();i++)
 					{
                         IAudioCaptureDataCb* pCb = m_vecDataCb[i];
 						pCb->OnCapturedData(m_WaveHeaderIn[nBufferIndex].lpData, nSamples, 

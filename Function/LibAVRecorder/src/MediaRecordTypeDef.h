@@ -1,6 +1,14 @@
 #ifndef MEDIARECORDTYPEDEF_H
 #define MEDIARECORDTYPEDEF_H
 
+
+
+#ifdef LIBAVRECORDER_EXPORTS
+#define RECORDAPI __declspec(dllexport)
+#else
+#define RECORDAPI __declspec(dllimport)
+#endif
+
 namespace MediaFileRecorder
 {
 	enum PIX_FMT

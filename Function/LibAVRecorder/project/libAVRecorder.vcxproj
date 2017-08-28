@@ -24,9 +24,7 @@
     <ClCompile Include="..\src\CWAVEAudioCapture.cpp" />
     <ClCompile Include="..\src\dllmain.cpp" />
     <ClCompile Include="..\src\log.cpp" />
-    <ClCompile Include="..\src\ScreenAndAudioCapture.cpp" />
     <ClCompile Include="..\src\ScreenGrabberFactory.cpp" />
-    <ClCompile Include="..\src\screen_audio_recorder.cpp" />
     <ClCompile Include="..\src\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -48,6 +46,7 @@
     <ClInclude Include="..\src\MediaRecordTypeDef.h" />
     <ClInclude Include="..\src\stdafx.h" />
     <ClInclude Include="..\src\targetver.h" />
+    <ClInclude Include="ICustomMediaRecorder.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6C00289C-F9F4-4649-B319-784620C07ABD}</ProjectGuid>

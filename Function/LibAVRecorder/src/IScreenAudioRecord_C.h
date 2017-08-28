@@ -1,12 +1,9 @@
 #ifndef ISCREENAUDIORECORD_C_H
 #define ISCREENAUDIORECORD_C_H
 
-#ifdef LIBAVRECORDER_EXPORTS
-#define RECORDAPI __declspec(dllexport)
-#else
-#define RECORDAPI __declspec(dllimport)
-#endif
-
+/*
+*屏幕录制功能函数C导出接口
+*/
 #include "MediaRecordTypeDef.h"
 
 typedef void* RecorderHander;

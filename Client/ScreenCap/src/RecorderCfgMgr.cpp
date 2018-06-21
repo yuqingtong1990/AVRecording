@@ -25,9 +25,11 @@ void CRecorderCfgMgr::GetDefCofig(MediaFileRecorder::RECORD_INFO& cfg)
 {
 	//获得
 	memset(cfg.file_name, 0, MAX_PATH);
-	char path[200] = {0};
-	if (SHGetSpecialFolderPathA(NULL, path, CSIDL_MYVIDEO, FALSE) == TRUE){
-		_snprintf_s(cfg.file_name, 200, _TRUNCATE, "%s\\%d.mp4", path, time(NULL));
+	char path[MAX_PATH] = {0};
+	if (SHGetSpecialFolderPathA(NULL, path, CSIDL_DESKTOP, FALSE) == TRUE){
+		SYSTEMTIME st;
+		::GetLocalTime(&st);
+		_snprintf_s(cfg.file_name, MAX_PATH, _TRUNCATE, "%s\\%4d-%02d-%02d_%02d-%02d-%02d.mp4", path,st.wYear, st.wMonth, st.wDay,st.wHour, st.wMinute, st.wSecond);
 	}
 
 	//主屏大小
